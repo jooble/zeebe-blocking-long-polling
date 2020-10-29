@@ -1,0 +1,6 @@
+zeebe:
+  client:
+    worker:
+      defaultName: test-worker
+    broker.contactPoint: localhost:26501
+    security.plaintext: true
