@@ -18,6 +18,7 @@ services:
       - ZEEBE_GATEWAY_CLUSTER_PORT=26502
       - ZEEBE_GATEWAY_CLUSTER_HOST=gateway
       - ZEEBE_GATEWAY_CLUSTER_MEMBERID=0
+      - ZEEBE_GATEWAY_CLUSTER_MEMBERID=gateway-0
     ports:
       - "26500:26500"
     networks:
@@ -34,7 +35,7 @@ services:
       - ZEEBE_GATEWAY_CLUSTER_CONTACTPOINT=node0:26502
       - ZEEBE_GATEWAY_CLUSTER_PORT=26502
       - ZEEBE_GATEWAY_CLUSTER_HOST=gateway
-      - ZEEBE_GATEWAY_CLUSTER_MEMBERID=1
+      - ZEEBE_GATEWAY_CLUSTER_MEMBERID=gateway-1
     ports:
       - "26501:26500"
     networks:
